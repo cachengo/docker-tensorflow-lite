@@ -1,7 +1,7 @@
 FROM debian:stretch
 
 RUN apt-get update \
-    && apt-get install -y build-essential git curl \
+    && apt-get install -y build-essential git curl unzip \
     && git clone https://github.com/tensorflow/tensorflow.git \
     && cd /tensorflow \
     && ./tensorflow/contrib/lite/tools/make/download_dependencies.sh
